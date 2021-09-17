@@ -60,6 +60,15 @@ ul {
   margin-left: 20px;
 }
 
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 21;
+  display: none;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -238,8 +247,50 @@ ul {
 }
 
 @media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
   .home-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-nav ul.main-menu {
+    display: block; /*chg to block since its a flex */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    opacity: 0.9;
+    border-right: #ccc 1px solid;
+    transform: translateX(-500px); /*completely hide it by moving it away*/
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .main-nav ul.main-menu.show {
+    /* make the menu reappear*/
+    transform: translateX(
+      -20px
+    ); /*move all the way to the left(-1) since theres a space*/
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: none;
   }
   .xbox .content p {
     display: none;
