@@ -5,8 +5,6 @@ This is a practice project where i recreated my own version of the Microsoft hom
 - Most of the buttons do not redirect anywhere. However the website is responsive. The website will scale accordingly when it is viewed on a table or phone.
 - JS is involved when view on a phone (_700px_). Navigation bar will be gone and a side menu will pop up when the menu button is clicked (_located on the top right_)
 
-### View website on the link below
-
-https://aaron1999x.github.io/recreateMicrosoft/
+### [View Website](https://aaron1999x.github.io/recreateMicrosoft/)
 
 ##### Credits to _TraversyMedia_ for this awesome practice tutorial
